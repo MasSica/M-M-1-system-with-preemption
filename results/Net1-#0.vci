@@ -1,0 +1,27 @@
+file 608 1576253362                                             
+version 2
+run Net1-0-20191213-17:02:16-8736
+attr configname Net1
+attr datetime 20191213-17:02:16
+attr experiment Net1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 8736
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.n ask
+param **.policy ask
+param **.gen[*].interArrivalTime exponential(0.5s)
+param **.gen[*].serviceTime exponential(0.4s)
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+0	597 9 0 0 0 0 1 0 0 0 0
+

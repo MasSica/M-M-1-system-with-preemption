@@ -1,0 +1,85 @@
+version 2
+run Four_Classes-0-20191216-13:43:37-10388
+attr configname Four_Classes
+attr datetime 20191216-13:43:37
+attr experiment Four_Classes
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 10388
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.n 4
+param **.policy ask
+param **.gen[0].interArrivalTime exponential(0.3s)
+param **.gen[0].serviceTime exponential(0.9s)
+param **.gen[1].interArrivalTime exponential(0.4s)
+param **.gen[1].serviceTime exponential(0.3s)
+param **.gen[2].interArrivalTime exponential(0.5s)
+param **.gen[2].serviceTime exponential(0.4s)
+param **.gen[3].interArrivalTime exponential(0.2s)
+param **.gen[3].serviceTime exponential(0.1s)
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Net.sys queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Net.sys "Class 1 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+0	0	0	0
+0	4	0.359424155394	1
+0	6	0.371920842415	2
+0	8	0.567322127694	3
+0	10	0.627965379024	4
+0	12	0.664347760438	5
+0	14	0.676024694257	6
+0	16	0.739695922425	7
+0	18	0.804544948593	8
+0	20	0.824225952135	9
+0	22	0.869585192075	10
+0	24	0.969359593878	11
+1	2	0.23876235137	0
+2	2	0.23876235137	0
+vector 3 Net.sys responseTime:vector ETV
+attr interpolationmode none
+attr title "response time at end of service, vector"
+attr unit s
+vector 4 Net.sys "Class 1 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 5 Net.sys "Class 1 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 6 Net.sink lifetime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived msg, vector"
+attr unit s
+vector 7 Net.sink arrivedMsg:vector ETV
+attr interpolationmode none
+attr title "number of arrived msg, vector"
+0	26	1.020390722301	12
+0	27	1.069663169694	11
+0	30	1.111009777075	12
+0	32	1.143864121174	13
+0	34	1.281638562351	14
+0	36	1.331033446733	15
+1	27	1.069663169694	0.245437217559
+2	27	1.069663169694	0.245437217559
+3	27	1.069663169694	0.830900818324
+4	27	1.069663169694	0.830900818324
+5	27	1.069663169694	0.830900818324
+6	28	1.069663169694	0.830900818324
+7	28	1.069663169694	1
+

@@ -1,0 +1,80 @@
+file 1868947 1576499476                                         
+version 2
+run Ten_Classes-0-20191216-13:28:33-5524
+attr configname Ten_Classes
+attr datetime 20191216-13:28:33
+attr experiment Ten_Classes
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 5524
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.n 10
+param **.policy ask
+param **.gen[0].interArrivalTime exponential(0.3s)
+param **.gen[0].serviceTime exponential(0.9s)
+param **.gen[1].interArrivalTime exponential(0.4s)
+param **.gen[1].serviceTime exponential(0.3s)
+param **.gen[2].interArrivalTime exponential(0.5s)
+param **.gen[2].serviceTime exponential(0.4s)
+param **.gen[3].interArrivalTime exponential(0.2s)
+param **.gen[3].serviceTime exponential(0.1s)
+param **.gen[4].interArrivalTime exponential(0.3s)
+param **.gen[4].serviceTime exponential(0.9s)
+param **.gen[5].interArrivalTime exponential(0.4s)
+param **.gen[5].serviceTime exponential(0.3s)
+param **.gen[6].interArrivalTime exponential(0.5s)
+param **.gen[6].serviceTime exponential(0.4s)
+param **.gen[7].interArrivalTime exponential(0.2s)
+param **.gen[7].serviceTime exponential(0.1s)
+param **.gen[8].interArrivalTime exponential(0.3s)
+param **.gen[8].serviceTime exponential(0.9s)
+param **.gen[9].interArrivalTime exponential(0.4s)
+param **.gen[9].serviceTime exponential(0.3s)
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Net.sys queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Net.sys "Class 1 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 3 Net.sys responseTime:vector ETV
+attr interpolationmode none
+attr title "response time at end of service, vector"
+attr unit s
+vector 4 Net.sys "Class 1 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 5 Net.sys "Class 1 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 6 Net.sink lifetime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived msg, vector"
+attr unit s
+vector 7 Net.sink arrivedMsg:vector ETV
+attr interpolationmode none
+attr title "number of arrived msg, vector"
+0	2448 1023655 0 65534 0 1000.394308951748 32768 0 30420 498559961 10115297479963
+0	1026103 405796 65536 90212 1000.407077709236 1375.167062108041 12339 30421 41983 446883984 16322112029566
+1	1431899 65236 11 90037 0 1372.667694273428 1562 0 897.90271916601 678547.76548133 397417701.08895
+2	1497135 65236 11 90037 0 1372.667694273428 1562 0 897.90271916601 678547.76548133 397417701.08895
+3	1562371 65231 53 90037 0.716287054109 1372.667694273428 1561 0.528763861076 898.96983398078 679022.66621324 397826795.13275
+4	1627602 65231 53 90037 0.716287054109 1372.667694273428 1561 0.528763861076 898.96983398078 679022.66621324 397826795.13275
+5	1692833 63725 53 90037 0.716287054109 1372.667694273428 1561 0.000275925511 7.326064115031 1372.6676942734 2402.6218465979
+6	1756558 65231 54 90038 0.716287054109 1372.667694273428 1561 0.528763861076 898.96983398078 679022.66621324 397826795.13275
+7	1821789 47156 54 90038 0.716287054109 1372.667694273428 1561 1 1561 1219141 1269125781
+

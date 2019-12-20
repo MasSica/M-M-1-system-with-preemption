@@ -1,0 +1,70 @@
+file 2546 1576500309                                            
+version 2
+run Four_Classes-0-20191216-13:43:37-10388
+attr configname Four_Classes
+attr datetime 20191216-13:43:37
+attr experiment Four_Classes
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 10388
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.n 4
+param **.policy ask
+param **.gen[0].interArrivalTime exponential(0.3s)
+param **.gen[0].serviceTime exponential(0.9s)
+param **.gen[1].interArrivalTime exponential(0.4s)
+param **.gen[1].serviceTime exponential(0.3s)
+param **.gen[2].interArrivalTime exponential(0.5s)
+param **.gen[2].serviceTime exponential(0.4s)
+param **.gen[3].interArrivalTime exponential(0.2s)
+param **.gen[3].serviceTime exponential(0.1s)
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Net.sys queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Net.sys "Class 1 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+0	1189 261 0 24 0 0.969359593878 12 0 11 66 506
+1	1450 21 2 2 0.23876235137 0.23876235137 1 0 0 0 0
+2	1471 21 2 2 0.23876235137 0.23876235137 1 0 0 0 0
+vector 3 Net.sys responseTime:vector ETV
+attr interpolationmode none
+attr title "response time at end of service, vector"
+attr unit s
+vector 4 Net.sys "Class 1 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 5 Net.sys "Class 1 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 6 Net.sink lifetime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived msg, vector"
+attr unit s
+vector 7 Net.sink arrivedMsg:vector ETV
+attr interpolationmode none
+attr title "number of arrived msg, vector"
+0	2161 144 26 36 1.020390722301 1.331033446733 6 11 15 77 999
+1	2305 36 27 27 1.069663169694 1.069663169694 1 0.245437217559 0.245437217559 0.245437217559 0.060239427763104
+2	2341 36 27 27 1.069663169694 1.069663169694 1 0.245437217559 0.245437217559 0.245437217559 0.060239427763104
+3	2377 36 27 27 1.069663169694 1.069663169694 1 0.830900818324 0.830900818324 0.830900818324 0.69039616989149
+4	2413 36 27 27 1.069663169694 1.069663169694 1 0.830900818324 0.830900818324 0.830900818324 0.69039616989149
+5	2449 36 27 27 1.069663169694 1.069663169694 1 0.830900818324 0.830900818324 0.830900818324 0.69039616989149
+6	2485 36 28 28 1.069663169694 1.069663169694 1 0.830900818324 0.830900818324 0.830900818324 0.69039616989149
+7	2521 23 28 28 1.069663169694 1.069663169694 1 1 1 1 1
+

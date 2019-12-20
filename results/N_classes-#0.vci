@@ -1,0 +1,81 @@
+file 416075 1576334832                                          
+version 2
+run N_classes-0-20191214-15:40:26-2968
+attr configname N_classes
+attr datetime 20191214-15:40:26
+attr experiment N_classes
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 2968
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.n ask
+param **.policy ask
+param **.gen[*].interArrivalTime exponential(0.5s)
+param **.gen[*].serviceTime exponential(0.4s)
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Net.sys queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Net.sys "Class 1 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 3 Net.sys responseTime:vector ETV
+attr interpolationmode none
+attr title "response time at end of service, vector"
+attr unit s
+vector 4 Net.sys "Class 1 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 5 Net.sys "Class 1 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 6 Net.sys "Class 2 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 7 Net.sink lifetime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived msg, vector"
+attr unit s
+vector 8 Net.sink arrivedMsg:vector ETV
+attr interpolationmode none
+attr title "number of arrived msg, vector"
+vector 9 Net.sys "Class 2 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 10 Net.sys "Class 2 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 11 Net.sys "Class 3 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+0	2124 110693 0 7684 0 461.112470496844 3843 0 1628 3111657 3384524065
+1	112817 48297 4 7681 0 461.075293549876 1273 0 364.34246901259 57454.507032023 12481757.338804
+2	161114 33973 4 7680 0 461.042377082888 917 0 10.229260976039 1888.0586077982 8854.6906395069
+3	195087 43766 7 7681 0.318349801826 461.075293549876 1107 0.001882616197 363.06164646471 30161.098716685 6074000.258746
+4	238853 36134 7 7681 0.318349801826 461.075293549876 917 0.001882616197 11.24551027063 2273.8029540586 10753.539109065
+5	274987 36125 7 7681 0.318349801826 461.075293549876 917 0.000146967067 2.893387381119 385.74434626041 342.69611763686
+6	311112 14288 7 7681 0.318349801826 461.075293549876 355 0.205800455001 364.34246901259 55565.092402269 12472900.809369
+7	325400 43767 8 7682 0.318349801826 461.075293549876 1107 0.001882616197 363.06164646471 30161.098716685 6074000.258746
+8	369167 31544 8 7682 0.318349801826 461.075293549876 1107 1 1107 613278 452803590
+9	400711 7632 17 7675 1.135602561038 460.812286743206 190 0.426219849669 363.06164646471 27887.295762627 6063246.7196369
+10	408343 7693 17 7675 1.135602561038 460.812286743206 190 0.000218447984 298.3663271267 3376.4660656224 729853.87715653
+11	416036 37 21 21 1.356021955706 1.356021955706 1 1.356021955706 1.356021955706 1.356021955706 1.8387955443567
+

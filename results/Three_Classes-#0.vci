@@ -1,0 +1,65 @@
+file 293662 1576282021                                          
+version 2
+run Three_Classes-0-20191214-01:06:30-10528
+attr configname Three_Classes
+attr datetime 20191214-01:06:30
+attr experiment Three_Classes
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 10528
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.n 3
+param **.policy ask
+param **.gen[0].interArrivalTime exponential(0.3s)
+param **.gen[0].serviceTime exponential(0.9s)
+param **.gen[1].interArrivalTime exponential(0.4s)
+param **.gen[1].serviceTime exponential(0.3s)
+param **.gen[2].interArrivalTime exponential(0.5s)
+param **.gen[2].serviceTime exponential(0.4s)
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Net.sys queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Net.sys "Class 1 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 3 Net.sys responseTime:vector ETV
+attr interpolationmode none
+attr title "response time at end of service, vector"
+attr unit s
+vector 4 Net.sys "Class 1 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 5 Net.sys "Class 1 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 6 Net.sink lifetime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived msg, vector"
+attr unit s
+vector 7 Net.sink arrivedMsg:vector ETV
+attr interpolationmode none
+attr title "number of arrived msg, vector"
+0	1762 136422 0 9332 0 529.511877966779 4667 0 3513 8169901 19059509689
+1	138184 23286 4 9313 0 528.881007459254 577 0 348.63480267564 97914.604763238 22138252.772338
+2	161470 23286 4 9313 0 528.881007459254 577 0 348.63480267564 97914.604763238 22138252.772338
+3	184756 23284 9 9313 0.716287054109 528.881007459254 576 0.716287054109 349.06781288824 98094.850968021 22198863.788891
+4	208040 23284 9 9313 0.716287054109 528.881007459254 576 0.716287054109 349.06781288824 98094.850968021 22198863.788891
+5	231324 22717 9 9313 0.716287054109 528.881007459254 576 0.000491507963 5.590452938749 528.88100745925 971.48040615757
+6	254041 23285 10 9314 0.716287054109 528.881007459254 576 0.716287054109 349.06781288824 98094.850968021 22198863.788891
+7	277326 16334 10 9314 0.716287054109 528.881007459254 576 1 576 166176 63866976
+

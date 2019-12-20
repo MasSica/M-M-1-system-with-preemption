@@ -1,0 +1,77 @@
+file 1506129 1576502382                                         
+version 2
+run General-0-20191216-14:19:11-3768
+attr configname General
+attr datetime 20191216-14:19:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 3768
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 0 Net.sys qlen:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 Net.sys queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time at dequeue, vector"
+attr unit s
+vector 2 Net.sys "Class 3 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 3 Net.sys "Class 2 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 4 Net.sys responseTime:vector ETV
+attr interpolationmode none
+attr title "response time at end of service, vector"
+attr unit s
+vector 5 Net.sys "Class 2 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 6 Net.sys "Class 2 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+vector 7 Net.sys "Class 1 QueueingTime:vector" ETV
+attr interpolationmode none
+attr title "queueing time per class, vector"
+attr unit s
+vector 8 Net.sink lifetime:vector ETV
+attr interpolationmode none
+attr title "lifetime of arrived msg, vector"
+attr unit s
+vector 9 Net.sink arrivedMsg:vector ETV
+attr interpolationmode none
+attr title "number of arrived msg, vector"
+vector 10 Net.sys "Class 1 ResponseTime:vector" ETV
+attr interpolationmode none
+attr title "response time per class, vector"
+attr unit s
+vector 11 Net.sys "Class 1 ExtServiceTime:vector" ETV
+attr interpolationmode none
+attr title "extended service time per class, vector"
+attr unit s
+0	1982 649975 0 63905 0 2026.8 31953 0 20739 331644170 4591169664008
+1	651957 146170 2 63905 0.1 2026.8 7635 0 419.1 600220.5 98860814.630001
+2	798127 23 2 23 0.1 1 2 0 0.8 0.8 0.64
+3	798150 115189 11 63905 0.5 2026.8 5607 0 419.1 600219.7 98860813.990001
+4	913339 112006 23 63905 1 2026.8 5607 0.1 419.2 428723.19999999 78448486.240001
+5	1025345 72944 23 63905 1 2026.8 3581 0.5 419.2 428520.6 78448465.980001
+6	1098289 70788 23 63905 1 2026.8 3581 0.5 314.2 152049.8 19664397.22
+7	1169077 30958 25 63882 1 2026 2026 0 0 0 0
+8	1200035 111985 27 63893 1 2026.3 5606 0.1 419.2 428565.39999999 78423585.400001
+9	1312020 111931 27 63893 1 2026.3 5606 1 5606 15716421 58742742891
+10	1423951 41088 30 63886 1.1 2026.1 2026 0.1 0.1 202.59999999999 20.26
+11	1465039 41088 30 63886 1.1 2026.1 2026 0.1 0.1 202.59999999999 20.26
+

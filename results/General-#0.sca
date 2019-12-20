@@ -1,0 +1,211 @@
+version 2
+run General-0-20191216-14:19:11-3768
+attr configname General
+attr datetime 20191216-14:19:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Net
+attr processid 3768
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Net.sys "Class 3 ExtServiceTime:timeavg" nan
+attr interpolationmode none
+attr title "extended service time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 3 ExtServiceTime:mean" nan
+attr interpolationmode none
+attr title "extended service time per class, mean"
+attr unit s
+scalar Net.sys "Class 2 ExtServiceTime:timeavg" 49.885457596999
+attr interpolationmode none
+attr title "extended service time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 2 ExtServiceTime:mean" 42.460150795868
+attr interpolationmode none
+attr title "extended service time per class, mean"
+attr unit s
+scalar Net.sys "Class 1 ExtServiceTime:timeavg" 0.099999999999996
+attr interpolationmode none
+attr title "extended service time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 1 ExtServiceTime:mean" 0.099999999999996
+attr interpolationmode none
+attr title "extended service time per class, mean"
+attr unit s
+scalar Net.sys "Class 3 QueueingTime:timeavg" 0.79964474268515
+attr interpolationmode none
+attr title "queueing time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 3 QueueingTime:mean" 0.4
+attr interpolationmode none
+attr title "queueing time per class, mean"
+attr unit s
+scalar Net.sys "Class 2 QueueingTime:timeavg" 98.563085426641
+attr interpolationmode none
+attr title "queueing time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 2 QueueingTime:mean" 107.04827893704
+attr interpolationmode none
+attr title "queueing time per class, mean"
+attr unit s
+scalar Net.sys "Class 1 QueueingTime:timeavg" 0
+attr interpolationmode none
+attr title "queueing time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 1 QueueingTime:mean" 0
+attr interpolationmode none
+attr title "queueing time per class, mean"
+attr unit s
+scalar Net.sys "Class 3 ResponseTime:timeavg" nan
+attr interpolationmode none
+attr title "response time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 3 ResponseTime:mean" nan
+attr interpolationmode none
+attr title "response time per class, mean"
+attr unit s
+scalar Net.sys "Class 2 ResponseTime:timeavg" 125.88712113733
+attr interpolationmode none
+attr title "response time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 2 ResponseTime:mean" 119.66506562413
+attr interpolationmode none
+attr title "response time per class, mean"
+attr unit s
+scalar Net.sys "Class 1 ResponseTime:timeavg" 0.099999999999996
+attr interpolationmode none
+attr title "response time per class, timeavg"
+attr unit s
+scalar Net.sys "Class 1 ResponseTime:mean" 0.099999999999996
+attr interpolationmode none
+attr title "response time per class, mean"
+attr unit s
+scalar Net.sys responseTime:mean 76.462136614945
+attr interpolationmode none
+attr title "response time at end of service, mean"
+attr unit s
+scalar Net.sys responseTime:max 419.2
+attr interpolationmode none
+attr title "response time at end of service, max"
+attr unit s
+scalar Net.sys queueingTime:mean 78.614341846758
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Net.sys queueingTime:max 419.1
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Net.sys busy:timeavg 0.99995066114071
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Net.sys busy:mean 0.5
+attr interpolationmode sample-hold
+attr title "server busy state, mean"
+scalar Net.sys qlen:timeavg 10374.578350108
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Net.sys qlen:mean 10379.124651832
+attr interpolationmode sample-hold
+attr title "queue length, mean"
+scalar Net.sys qlen:max 20739
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Net.sink arrivedMsg:last 5606
+attr interpolationmode none
+attr title "number of arrived msg, last"
+statistic Net.sink lifetime:histogram
+field count 5606
+field mean 76.447627541918
+field stddev 90.257612599682
+field min 0.1
+field max 419.2
+field sum 428565.39999999
+field sqrsum 78423585.400001
+attr interpolationmode none
+attr title "lifetime of arrived msg, histogram"
+attr unit s
+bin	-inf	0
+bin	0	2139
+bin	6.4	90
+bin	12.8	107
+bin	19.2	109
+bin	25.6	187
+bin	32	28
+bin	38.4	85
+bin	44.8	212
+bin	51.2	27
+bin	57.6	117
+bin	64	299
+bin	70.4	25
+bin	76.8	29
+bin	83.2	25
+bin	89.6	164
+bin	96	20
+bin	102.4	440
+bin	108.8	26
+bin	115.2	30
+bin	121.6	28
+bin	128	26
+bin	134.4	235
+bin	140.8	19
+bin	147.2	18
+bin	153.6	313
+bin	160	10
+bin	166.4	13
+bin	172.8	16
+bin	179.2	20
+bin	185.6	13
+bin	192	13
+bin	198.4	13
+bin	204.8	326
+bin	211.2	6
+bin	217.6	7
+bin	224	6
+bin	230.4	7
+bin	236.8	6
+bin	243.2	11
+bin	249.6	14
+bin	256	12
+bin	262.4	20
+bin	268.8	18
+bin	275.2	17
+bin	281.6	13
+bin	288	13
+bin	294.4	13
+bin	300.8	12
+bin	307.2	13
+bin	313.6	143
+bin	320	0
+bin	326.4	0
+bin	332.8	0
+bin	339.2	0
+bin	345.6	0
+bin	352	0
+bin	358.4	0
+bin	364.8	4
+bin	371.2	7
+bin	377.6	6
+bin	384	7
+bin	390.4	6
+bin	396.8	6
+bin	403.2	7
+bin	409.6	6
+bin	416	4
+bin	422.4	0
+scalar Net.sink lifetime:mean 76.447627541918
+attr interpolationmode none
+attr title "lifetime of arrived msg, mean"
+attr unit s
+scalar Net.sink lifetime:max 419.2
+attr interpolationmode none
+attr title "lifetime of arrived msg, max"
+attr unit s
+
